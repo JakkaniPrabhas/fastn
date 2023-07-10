@@ -1,0 +1,51 @@
+-- ftd.column:
+width: fill-container
+;; height: fill-container
+background.solid: red
+align-content: center
+
+
+-- card:
+-- card: King
+
+Virat Kohli is an Indian international cricketer and the former captain of the Indian national cricket
+ team who plays as a right-handed batsman
+-- card:
+
+
+-- end: ftd.column
+
+-- component card:
+caption title: Default title
+body description:Default body
+
+-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 300
+background.solid: blue
+border-width.px: 3
+padding.px: 20
+border-radius.px: 20
+spacing.fixed.px: 50
+
+
+
+-- ftd.image:
+src: https://m.economictimes.com/thumb/msid-98912259,width-1200,height-900,resizemode-4,imgsize-67876/virat-kohli.jpg
+height: fill-container
+border-radius.px: 20
+
+-- ftd.column:
+
+-- ftd.text: $card.title
+role: $inherited.types.heading-medium
+
+-- ftd.text: $card.description
+role: $inherited.types.copy-regular
+
+
+
+-- end: ftd.column
+
+-- end: ftd.row
+-- end: card
